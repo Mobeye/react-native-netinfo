@@ -11,7 +11,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v4.net.ConnectivityManagerCompat;
 import android.telephony.TelephonyManager;
 
 import com.facebook.react.bridge.Promise;
@@ -19,6 +18,8 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
+
+import androidx.core.net.ConnectivityManagerCompat;
 
 abstract class ConnectivityReceiver {
   // Based on the ConnectionType enum described in the W3C Network Information API spec
